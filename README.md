@@ -102,7 +102,7 @@ pip install -r requirements.txt
 2.  Paste your OpenAI API key after the equals sign. It should look like this:
 
 ```env
-OPENAI_API_KEY=sk-proj-1234567890abcdef...
+OPENAI_API_KEY=<enter your openai_API_KEY here>
 ```
 
 *Note: Do not add quotes or spaces around the key.*
