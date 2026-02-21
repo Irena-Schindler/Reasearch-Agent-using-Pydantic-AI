@@ -1,10 +1,10 @@
-# Padantic Deep Research Agent
+# Pydantic Deep Research Agent
 
-This is an advanced AI agent built with Pydantic AI (Padantic) using the `gpt-5-mini` model from OpenAI. It performs deep, multi-step research on any topic or stock ticker, synthesizing information from multiple web searches into a detailed report.
+This is an advanced AI agent built with Pydantic AI using the `gpt-5-mini` model from OpenAI. It performs deep, multi-step research on any topic or stock ticker, synthesizing information from multiple web searches into a detailed report.
 
 ## Features
 
--   **Deep Research**: Takes a query or stock ticker (e.g., "NVDA") and generates a comprehensive report.
+-   **Deep Research**: Takes a query or stock ticker (e.g., "Volkswagen") and generates a comprehensive report.
 -   **Multi-Step Process**:
     1.  **Planning**: Analyzes the request to identify key research angles.
     2.  **Parallel Execution**: Searches DuckDuckGo and scrapes web pages for each angle in parallel.
@@ -16,7 +16,7 @@ This is an advanced AI agent built with Pydantic AI (Padantic) using the `gpt-5-
 The Deep Research Agent follows this pipeline for every query:
 
 1.  **Input Classification**
-    - Detects whether the input is likely a stock ticker (e.g., `NVDA`) or a general research question.
+    - Detects whether the input is likely a stock ticker (e.g., `Volkswagen`) or a general research question.
     - For ticker/company-like inputs, it resolves topic context and enforces a `SWOT analysis` angle.
 
 2.  **Planning Agent**
