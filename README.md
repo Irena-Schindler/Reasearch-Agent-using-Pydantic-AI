@@ -16,7 +16,7 @@ This is an advanced AI agent built with Pydantic AI using the `gpt-5-mini` model
 The Deep Research Agent follows this pipeline for every query:
 
 1.  **Input Classification**
-    - Detects whether the input is likely a stock ticker (e.g., `Volkswagen`) or a general research question.
+    - Detects whether the input is likely a stock ticker (e.g., `VLKAF`) or a general research question.
     - For ticker/company-like inputs, it resolves topic context and enforces a `SWOT analysis` angle.
 
 2.  **Planning Agent**
