@@ -66,9 +66,9 @@ def ensure_swot_angle_if_applicable(plan: "ResearchPlan") -> None:
 
 class ResearchPlan(BaseModel):
     """Plan for the deep research."""
-    # True when the input is likely a stock ticker (e.g., NVDA).
+    # True when the input is likely a stock ticker.
     is_ticker: bool = Field(description="Whether the input is a stock ticker or a general query.")
-    # Resolved subject (e.g., "NVIDIA").
+    # Resolved subject (e.g., "Volkswagen").
     topic: str = Field(description="The main topic or company name resolved from the input.")
     # Extra context (sector, industry, domain).
     context: str = Field(description="Context about the topic (e.g., industry, sector).")
@@ -281,10 +281,11 @@ async def chat(message, history):
 demo = gr.ChatInterface(
     fn=chat,
     title="Deep Research Agent",
-    description="Enter a stock ticker (e.g., NVDA) or a general query. The agent will plan, research, and generate a detailed report.",
-    examples=["NVDA", "Future of quantum computing", "TSLA SWOT analysis"],
+    description="Enter a stock ticker (e.g., VLKAF) or a general query. The agent will plan, research, and generate a detailed report.",
+    examples=["VLKAF", "Future of quantum computing", "TSLA SWOT analysis"],
 )
 
 if __name__ == "__main__":
     # Start local Gradio server.
     demo.launch()
+
